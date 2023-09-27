@@ -2,11 +2,11 @@
 
 Cancer stem cells are one of these populations and the study of cancer stem cells, which are thought to play an active role in the growth and recurrence of tumor cells, is critical in understanding the initiation, development, and resistance to treatment of cancer. This R package was developed to estimate the stemness score specific to glioblastoma using scATAC-seq data. In this way, researchers will be able to investigate the cancer stemness of GBM cells using only accessible regions in chromatin (scATAC-seq data). 
 
-# Dependencies for the StemnessScore package
+# Dependencies for the StemnesScoRe package
 
 1. While using R programming, we suggest you use Rstudio which is the R statistical computing environment to use. 
-2. devtools is required to install StemnessScore.
-3. StemnessScore uses the following R packages which have to be installed before installing the StemnessScore package:
+2. devtools is required to install StemnesScoRe.
+3. StemnesScoRe uses the following R packages which have to be installed before installing the StemnesScoRe package:
 * Iranges
 * GenomicRanges
 * readr
@@ -19,21 +19,21 @@ Cancer stem cells are one of these populations and the study of cancer stem cell
 ```
 library(devtools)
 
-devtools::install_github("Necla/StemnessScore")
+devtools::install_github("Necla/StemnesScoRe")
 ```
 For complete list of functions and instructions:
 ```
-library(help = "StemnessScore") 
+library(help = "StemnesScoRe") 
 ```
 
 Note that devtools does not build vignettes by default. To view the vignette:
 
 ```
-devtools::install_github("Necla/StemnessScore", build_vignettes = FALSE)
+devtools::install_github("Necla/StemnesScoRe", build_vignettes = FALSE)
 
-library(StemnessScore)
+library(StemnesScoRe)
 
-vignette("StemnessScore")
+vignette("StemnesScoRe")
 ```
 
 # Tutorial
