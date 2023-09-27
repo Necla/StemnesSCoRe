@@ -1,0 +1,48 @@
+%\VignetteIndexEntry{Classifying RNA-seq Samples with qtQDA}
+%\VignettePackage{BiocStyle}
+%\VignetteEngine{utils::Sweave}
+
+\documentclass{article}
+
+<<style-Sweave, eval=TRUE, echo=FALSE, results=tex>>=
+BiocStyle::latex()
+@
+
+\newcommand{\code}[1]{{\small\texttt{#1}}}
+
+\title{Stemness Score Estimation Using scATAC-seq}
+\author[1]{Necla Ko\c{c}han}
+\author[1,2]{G\"okhan Karakulah}
+
+\affil[1]{Izmir Biomedicine and Genome Center, Izmir, Turkey}
+\affil[2]{Dokuz Eylul University, Izmir, Turkey}
+
+
+\date{\today
+}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+
+\begin{abstract}
+In this study, we present how to use \Rfunction{stemness.score} function from \Biocpkg{StemnessScore} package to estimate the stemness score of glioma cells using scATAC-seq samples.
+\end{abstract}
+
+\packageVersion{\Sexpr{BiocStyle::pkg_ver("StemnessScore")}}
+
+%Report issues on \url{https://github.com/Necla/StemnessScore/issues}
+
+\tableofcontents
+
+\section{Introduction}
+This package contains two functions stemness-score estimation and stemness-score normalization.
+
+Start with loading the \Biocpkg{StemnessScore} package.
+<<default-packages>>=
+library(StemnessScore)
+@
+% 
+
+\end{document}
