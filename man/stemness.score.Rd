@@ -2,7 +2,7 @@
 % Please edit documentation in R/stemness.score.R
 \name{stemness.score}
 \alias{stemness.score}
-\title{Stemness Score of Glioma Cells Using scATAC-seq Data}
+\title{An R package to estimate the stemness of glioma cancer cells at single-cell resolutions}
 \usage{
 stemness.score(
   main_folder_name,
